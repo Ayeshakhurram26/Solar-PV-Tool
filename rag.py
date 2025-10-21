@@ -26,3 +26,4 @@ def create_rag_chain(db):
     llm = OpenAI(temperature=0)
     qa = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
     return qa
+
